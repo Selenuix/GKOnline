@@ -10,4 +10,9 @@ class PagesController extends Controller
     public function getIndex() {
         return view('pages.welcome');
     }
+
+    // Return the contact page to router
+    public function getContact() {
+        return view('pages.contact');
+    }
 }
