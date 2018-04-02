@@ -15,4 +15,10 @@ class PagesController extends Controller
     public function getContact() {
         return view('pages.contact');
     }
+
+    // Return the about me page to router
+    public function getAbout() {
+        return view('pages.about');
+    
+    }
 }
