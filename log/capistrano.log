@@ -105,3 +105,53 @@
  DEBUG [a04cfd7b] Command: /usr/bin/env #<StringIO:0x00007fd2c8007cb8> /tmp/git-ssh-GKOnline-production-anthony.sh
   INFO [baa46a2a] Running /usr/bin/env chmod 700 /tmp/git-ssh-GKOnline-production-anthony.sh as anthony@gkonline.ga
  DEBUG [baa46a2a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-GKOnline-production-anthony.sh
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-04-03 20:56:28 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0390e1e5] Running /usr/bin/env mkdir -p /tmp as anthony@gkonline.ga
+ DEBUG [0390e1e5] Command: /usr/bin/env mkdir -p /tmp
+  INFO [27846bd5] Running /usr/bin/env #<StringIO:0x0000561c37f260d0> /tmp/git-ssh-GKOnline-production-anthony.sh as anthony@gkonline.ga
+ DEBUG [27846bd5] Command: /usr/bin/env #<StringIO:0x0000561c37f260d0> /tmp/git-ssh-GKOnline-production-anthony.sh
+  INFO [c48a68d6] Running /usr/bin/env chmod 700 /tmp/git-ssh-GKOnline-production-anthony.sh as anthony@gkonline.ga
+ DEBUG [c48a68d6] Command: /usr/bin/env chmod 700 /tmp/git-ssh-GKOnline-production-anthony.sh
+  INFO [f5de8ffc] Running /usr/bin/env git ls-remote git@github.com:Selenuix/GKOnline.git HEAD as anthony@gkonline.ga
+ DEBUG [f5de8ffc] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-GKOnline-production-anthony.sh" ; /usr/bin/env git ls-remote git@github.com:Selenuix/GKOnline.git HEAD )
+  INFO [825e4c7d] Running /usr/bin/env mkdir -p /var/www/anthony/gkonline/shared /var/www/anthony/gkonline/releases as anthony@gkonline.ga
+ DEBUG [825e4c7d] Command: /usr/bin/env mkdir -p /var/www/anthony/gkonline/shared /var/www/anthony/gkonline/releases
+ DEBUG [abf8d13c] Running [ -f /var/www/anthony/gkonline/current/REVISION ] as anthony@gkonline.ga
+ DEBUG [abf8d13c] Command: [ -f /var/www/anthony/gkonline/current/REVISION ]
+ DEBUG [5e27eb18] Running /usr/bin/env cat /var/www/anthony/gkonline/current/REVISION 2>/dev/null as anthony@gkonline.ga
+ DEBUG [5e27eb18] Command: /usr/bin/env cat /var/www/anthony/gkonline/current/REVISION 2>/dev/null
+ DEBUG [dcdbcc20] Running [ -f /var/www/anthony/gkonline/repo/HEAD ] as anthony@gkonline.ga
+ DEBUG [dcdbcc20] Command: [ -f /var/www/anthony/gkonline/repo/HEAD ]
+  INFO The repository mirror is at /var/www/anthony/gkonline/repo
+ DEBUG [0fefc0ef] Running if test ! -d /var/www/anthony/gkonline/repo; then echo "Directory does not exist '/var/www/anthony/gkonline/repo'" 1>&2; false; fi as anthony@gkonline.ga
+ DEBUG [0fefc0ef] Command: if test ! -d /var/www/anthony/gkonline/repo; then echo "Directory does not exist '/var/www/anthony/gkonline/repo'" 1>&2; false; fi
+  INFO [f273a2f9] Running /usr/bin/env git remote set-url origin git@github.com:Selenuix/GKOnline.git as anthony@gkonline.ga
+ DEBUG [f273a2f9] Command: cd /var/www/anthony/gkonline/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-GKOnline-production-anthony.sh" ; /usr/bin/env git remote set-url origin git@github.com:Selenuix/GKOnline.git )
+  INFO [b22d0168] Running /usr/bin/env git remote update --prune as anthony@gkonline.ga
+ DEBUG [b22d0168] Command: cd /var/www/anthony/gkonline/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-GKOnline-production-anthony.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [aaccf598] Running if test ! -d /var/www/anthony/gkonline/repo; then echo "Directory does not exist '/var/www/anthony/gkonline/repo'" 1>&2; false; fi as anthony@gkonline.ga
+ DEBUG [aaccf598] Command: if test ! -d /var/www/anthony/gkonline/repo; then echo "Directory does not exist '/var/www/anthony/gkonline/repo'" 1>&2; false; fi
+  INFO [df4ffcf0] Running /usr/bin/env mkdir -p /var/www/anthony/gkonline/releases/20180403185719 as anthony@gkonline.ga
+ DEBUG [df4ffcf0] Command: cd /var/www/anthony/gkonline/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-GKOnline-production-anthony.sh" ; /usr/bin/env mkdir -p /var/www/anthony/gkonline/releases/20180403185719 )
+  INFO [c6b0f7ba] Running /usr/bin/env git archive develop | /usr/bin/env tar -x -f - -C /var/www/anthony/gkonline/releases/20180403185719 as anthony@gkonline.ga
+ DEBUG [c6b0f7ba] Command: cd /var/www/anthony/gkonline/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-GKOnline-production-anthony.sh" ; /usr/bin/env git archive develop | /usr/bin/env tar -x -f - -C /var/www/anthony/gkonline/releases/20180403185719 )
+ DEBUG [ba8dc847] Running if test ! -d /var/www/anthony/gkonline/repo; then echo "Directory does not exist '/var/www/anthony/gkonline/repo'" 1>&2; false; fi as anthony@gkonline.ga
+ DEBUG [ba8dc847] Command: if test ! -d /var/www/anthony/gkonline/repo; then echo "Directory does not exist '/var/www/anthony/gkonline/repo'" 1>&2; false; fi
+ DEBUG [320cfa41] Running /usr/bin/env git rev-list --max-count=1 develop as anthony@gkonline.ga
+ DEBUG [320cfa41] Command: cd /var/www/anthony/gkonline/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-GKOnline-production-anthony.sh" ; /usr/bin/env git rev-list --max-count=1 develop )
+ DEBUG [5a6cf9d9] Running if test ! -d /var/www/anthony/gkonline/releases/20180403185719; then echo "Directory does not exist '/var/www/anthony/gkonline/releases/20180403185719'" 1>&2; false; fi as anthony@gkonline.ga
+ DEBUG [5a6cf9d9] Command: if test ! -d /var/www/anthony/gkonline/releases/20180403185719; then echo "Directory does not exist '/var/www/anthony/gkonline/releases/20180403185719'" 1>&2; false; fi
+  INFO [68d23a3f] Running /usr/bin/env echo "" >> REVISION as anthony@gkonline.ga
+ DEBUG [68d23a3f] Command: cd /var/www/anthony/gkonline/releases/20180403185719 && /usr/bin/env echo "" >> REVISION
+  INFO [79b6ecab] Running /usr/bin/env ln -s /var/www/anthony/gkonline/releases/20180403185719 /var/www/anthony/gkonline/releases/current as anthony@gkonline.ga
+ DEBUG [79b6ecab] Command: /usr/bin/env ln -s /var/www/anthony/gkonline/releases/20180403185719 /var/www/anthony/gkonline/releases/current
+  INFO [af444488] Running /usr/bin/env mv /var/www/anthony/gkonline/releases/current /var/www/anthony/gkonline as anthony@gkonline.ga
+ DEBUG [af444488] Command: /usr/bin/env mv /var/www/anthony/gkonline/releases/current /var/www/anthony/gkonline
+ DEBUG [46c3f9dd] Running /usr/bin/env ls -x /var/www/anthony/gkonline/releases as anthony@gkonline.ga
+ DEBUG [46c3f9dd] Command: /usr/bin/env ls -x /var/www/anthony/gkonline/releases
+ DEBUG [b2ef126a] Running if test ! -d /var/www/anthony/gkonline/releases; then echo "Directory does not exist '/var/www/anthony/gkonline/releases'" 1>&2; false; fi as anthony@gkonline.ga
+ DEBUG [b2ef126a] Command: if test ! -d /var/www/anthony/gkonline/releases; then echo "Directory does not exist '/var/www/anthony/gkonline/releases'" 1>&2; false; fi
+  INFO [55bc85e0] Running /usr/bin/env echo "Branch develop (at ) deployed as release 20180403185719 by anthony" >> /var/www/anthony/gkonline/revisions.log as anthony@gkonline.ga
+ DEBUG [55bc85e0] Command: cd /var/www/anthony/gkonline/releases && /usr/bin/env echo "Branch develop (at ) deployed as release 20180403185719 by anthony" >> /var/www/anthony/gkonline/revisions.log
