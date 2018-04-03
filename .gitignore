@@ -17,4 +17,4 @@ config/deploy/*.rb
 config/deploy.rb
 Capfile
 
-/log/*.log
+log/*.log
