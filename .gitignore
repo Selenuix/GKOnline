@@ -13,6 +13,6 @@ yarn-error.log
 .env
 Capfile
 
-/config/deploy/*.rb
-/config/deploy.rb
-/Capfile
+config/deploy/*.rb
+config/deploy.rb
+Capfile
