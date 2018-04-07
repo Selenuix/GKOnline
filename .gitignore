@@ -3,3 +3,6 @@ lib/
 storage/
 vendor/
 .env
+config/
+log/
+Capfile
