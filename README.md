@@ -4,13 +4,13 @@ A brief story:
 ================
 
 One day, a friend started to create her website
-using [e-monsite](https://www.e-monsite.com/). As I would like to be web developper later, and as I also don't really like e-monsite or wix and others, I just proposed her to do it. She wanted a basic website to put her drawings on.
+using [e-monsite](https://www.e-monsite.com/). As I would like to become a web developer later and as I also don't really like e-monsite or wix and others, I just asked her to do it. She wanted a basic website to put her drawings on.
 
-The project started in December 2017, with some hand-sketched models. Then, I discovered the Laravel PHP framework. So, I just begin to learn it and I thought that it could be a good idea to use Laravel for this project. My first Laravel project, and obviously, my first website that will be pushed in production.
+The project started in December 2017, with some hand-sketched models. Then, I discovered the Laravel PHP framework. So, I just began to learn it and I thought that it could be a great idea to use Laravel for this project.
 
 Project status:
 ===================
-Nowadays, the website is under development. The frontend is done (it wasn't really long, I'm using some templates and adapting them). But, for now, I have to work with Laravel. I've discovered it, but as I said, it's the first time I'm using a PHP framework. If you want to follow my job, you can look at my Trello [roadmap](https://trello.com/b/NEkExxp1).
+This project is abandoned, since it is not needed by my friend anymore.
 
 Technologies:
 =============
